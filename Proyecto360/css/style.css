@@ -75,10 +75,11 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 100%;
+    top: 0%;
+    margin-top: 51%;
 }
 .mano img {
-    width: 90%;
+    width: 89%;
     height: auto;
 }
 .text2 {
@@ -91,14 +92,14 @@ main {
 }
 .text2 h1 {
     width: 100%;
-    font-size: xxx-large;
+    font-size: 250%;
     color: #5d00ff;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', sans-serif;
 }
 .text2 p {
-    margin-top: 25%;
-    font-size: x-large;
+    margin-top: 20%;
+    font-size: 150%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
 }
@@ -109,11 +110,12 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 200%;
-    text-align: center
+    top: 0%;
+    text-align: center;
+    margin-top: 100%;
 }
 .container3 h1 {
-    font-size: xxx-large;
+    font-size: 250%;
     color: #ffffff;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', sans-serif;
@@ -134,14 +136,15 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 400%;
+    top: 0%;
+    margin-top: 200%;
     text-align: center;
 }
 .container5 h1 {
     position: absolute;
     top: 12%;
     margin-left: 35%;
-    font-size: xxx-large;
+    font-size: 250%;
     color: #ffffff;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', sans-serif;
@@ -149,7 +152,6 @@ main {
 .laptop {
     width: 100%;
     height: auto;
-    margin-top: 5%;
 }
 .laptop img {
     width: 75%;
@@ -162,13 +164,13 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 500%;
-    margin-top: 1%;
+    top: 0%;
+    margin-top: 245%;
 }
 .container6 h1 {
     margin-top: 5%;
     text-align: center;
-    font-size: xxx-large;
+    font-size: 250%;
     color: #5d00ff;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', sans-serif;
@@ -183,6 +185,7 @@ main {
     margin-top: 2.5%;
     margin-left: 10% ;
     width: 50%;
+    height: auto;
 }
 .fisico img {
     width: 21.5%;
@@ -195,7 +198,7 @@ main {
     text-align: left;
 }
 .textos p {
-    font-size: x-large;
+    font-size: 150%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #5d00ff;
 }
@@ -204,8 +207,8 @@ main {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 600%;
-    margin-top: 1%;
+    top: 0%;
+    margin-top: 293%;
     text-align: center;
 }
 .ipad {
