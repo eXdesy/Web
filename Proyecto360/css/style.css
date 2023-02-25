@@ -38,7 +38,7 @@ main {
     margin: 22%;
 }
 .text-typing {
-    font-size: xxx-large;
+    font-size: 250%;
     color: #5d00ff;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', sans-serif;
@@ -76,7 +76,7 @@ main {
     height: auto;
     position: absolute;
     top: 0%;
-    margin-top: 51%;
+    margin-top: 55%;
 }
 .mano img {
     width: 89%;
@@ -87,7 +87,7 @@ main {
     flex-direction: column;
     text-align: center;
     width: 75%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 10%;
 }
 .text2 h1 {
@@ -98,7 +98,7 @@ main {
     font-family:'Franklin Gothic Medium', sans-serif;
 }
 .text2 p {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 150%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
@@ -112,7 +112,7 @@ main {
     position: absolute;
     top: 0%;
     text-align: center;
-    margin-top: 100%;
+    margin-top: 104%;
 }
 .container3 h1 {
     font-size: 250%;
@@ -142,8 +142,8 @@ main {
 }
 .container5 h1 {
     position: absolute;
-    top: 12%;
-    margin-left: 35%;
+    top: 5%;
+    margin-left: 38%;
     font-size: 250%;
     color: #ffffff;
     font-weight: bold;
@@ -176,7 +176,7 @@ main {
     font-family:'Franklin Gothic Medium', sans-serif;
 }
 .content {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -188,7 +188,7 @@ main {
     height: auto;
 }
 .fisico img {
-    width: 21.5%;
+    width: 18%;
     height: auto;
 }
 .textos {
@@ -208,7 +208,7 @@ main {
     height: auto;
     position: absolute;
     top: 0%;
-    margin-top: 293%;
+    margin-top: 295%;
     text-align: center;
 }
 .ipad {
