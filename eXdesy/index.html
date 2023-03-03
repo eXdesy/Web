@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="New web page">
@@ -14,19 +14,19 @@
 
 	<title>eXdesy</title>
 
-	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<link href="css/index.css" rel="stylesheet" type="text/css"/>
-	<script type="text/javascript" src="js/main.js" defer></script>
-
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/main.js" defer></script>
 </head>
-<body>
+<body style="background-image: url(img/earth.jpg);">
 	<header>
 		<div class="layers">
-			<div class="layers__header">
+			<div class="header">
 				<div class="antext">
 					<p>eXdesy is...</p>
 				</div>
@@ -40,24 +40,24 @@
 					<span id="typed"></span>
 				</div>
 			</div>
-			<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-			<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-			<div class="layer layers__front" style="background-image: url(img/layer-front.png);">
+			<div class="layer base" style="background-image: url(img/layer-base.png);"></div>
+			<div class="layer middle" style="background-image: url(img/layer-middle.png);"></div>
+			<div class="layer front" style="background-image: url(img/layer-front.png);">
 				<nav>
 					<div class="link">
-						<a href="#">ABOUT ME</a></li>
+						<a href="index.html">HOME</a></li>
+						<a href="aboutMe/index.html">ABOUT ME</a></li>
 						<a href="#">PORTFOLIO</a></li>
-						<a href="#">LINK</a></li>
 					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="main-article" style="background-image: url(img/dungeon.jpg);">
-			<div class="main-article__content">
-				<h2 class="main-article__header">Hi, i'm eXdesy 👽</h2>
-				<p class="main-article__paragraph">It's still deserted here, but interesting things are coming soon. Patience is everything!</p>
+		<div class="content" style="background-image: url(img/dungeon.jpg);">
+			<div class="text">
+				<h2 class="texth2">Hi, i'm eXdesy 👽</h2>
+				<p class="textp">It's still deserted here, but interesting things are coming soon. Patience is everything!</p>
 			</div>
 		</div>
 	</main>
@@ -74,7 +74,7 @@
 				<a href="mailto:exdesy.design@gmail.com"><p>exdesy.design@gmail.com</p></a>
 			</ul>
 		</div>
-		<div class="copyright">© eXdesy</div>
+		<div class="copyright"><a href="index.html">© eXdesy</a></div>
 	</footer>
 </body>
 </html>
