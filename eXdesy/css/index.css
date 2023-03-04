@@ -3,12 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: raleway;
+	color: var(--color);
 }
 :root {
 	--index: calc(1vw + 1vh);
 	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
-	--text: #e7e7e0;
-	--header: #f4efec;
+	--color: #e7e7e0;
 	--gallery-gap: calc(var(--index) * 7.5)
 }
 @font-face {
@@ -39,9 +39,13 @@ nav{
     justify-content:space-around;
 }
 .link a {
-    color: var(--text);
 	text-shadow: 0 0 15px #1a5f3d;
     text-decoration: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
 }
 
 .footer {
@@ -56,7 +60,6 @@ nav{
 	font-size: calc(var(--index) * 1.5);
 }
 .footer ul, a {
-    color: var(--text);
 	font-size: calc(var(--index) * 1);
 	text-decoration: none;
 }
@@ -73,5 +76,4 @@ nav{
 	opacity: .45;
 	font-size: calc(var(--index) * .75);
 	letter-spacing: calc(var(--index) / 37);
-	color: var(--text);
 }
