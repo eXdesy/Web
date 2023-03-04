@@ -31,7 +31,7 @@ body {
 	font-size: calc(var(--index) * 3);
 	position: absolute;
 	width: 100vh;
-	bottom: 15vh;
+	bottom: 20vh;
 	line-height: .9;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 .gallery {
 	display: flex;
-	padding: calc(var(--index) * 8) 0
+	padding: calc(var(--index) * 8) 0;
 	flex-wrap: wrap;
 }
 .item {
