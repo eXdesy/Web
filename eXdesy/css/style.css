@@ -1,9 +1,8 @@
 body {
-	font-family: raleway;
 	line-height: 1.55;
 	will-change: transform;
+	font-family: raleway;
 }
-
 header {
 	position: relative;
 }
@@ -61,6 +60,7 @@ footer {
 .front {
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
+
 .header {
 	margin-bottom: 20vh;
 	z-index: 1;
@@ -69,7 +69,6 @@ footer {
 	will-change: transform;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #ffffff;
 	text-shadow: 0 0 15px #9d822b;
 }
 .antext {
@@ -83,12 +82,11 @@ footer {
 	letter-spacing: calc(var(--index) / 2.25);
 }
 
-.content {
-	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+.main__content {
+	--content-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
-	color: var(--text);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -99,14 +97,13 @@ footer {
 	z-index: 10;
 }
 .text {
-	color: var(--text);
 	position: relative;
 }
 .texth2 {
 	text-transform: uppercase;
 	font-size: calc(var(--index) * 1.8);
 	letter-spacing: calc(var(--index) / 7.5);
-	transform: var(--main-article-transform);
+	transform: var(--content-transform);
 	transition: var(--transition);
 	will-change: transform;
 }
@@ -114,7 +111,7 @@ footer {
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .9);
 	margin-top: calc(var(--index) / 1.25);
-	transform: var(--main-article-transform);
+	transform: var(--content-transform);
 	transition: var(--transition);
 	will-change: transform;
 }
