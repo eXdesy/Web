@@ -1,6 +1,4 @@
 body {
-    background-image: url(../img/bg.jpg);
-	background-size: 50px;
     background-position: center;
 	overflow-x: hidden;
 	line-height: 1.55;
@@ -9,17 +7,8 @@ body {
 .content, .hero, .title, .gallery > * {
 	will-change: transform;
 }
-.logan {
-	padding: 0 7vw;
-}
 .container {
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-	background-position: center;
-	will-change: transform;
-	transition: var(--transition);
-	padding: 0 7vw;
+	padding: 0 5vw;
 }
 .hero {
 	max-width: calc(var(--index) * 36);
@@ -32,7 +21,6 @@ body {
 	height: 100vh;
 }
 .title1 {
-	color: var(--header);
 	font-size: calc(var(--index) * 8);
 	position: absolute;
 	width: min-content;
@@ -40,7 +28,6 @@ body {
 	line-height: .9;
 }
 .title2 {
-	color: var(--header);
 	font-size: calc(var(--index) * 3);
 	position: absolute;
 	width: 100vh;
@@ -59,12 +46,13 @@ body {
 	padding: calc(var(--index) * 8) 0;
 }
 .item {
-	max-width: calc(var(--index) * 22);
+	max-width: calc(var(--index) * 20);
 	margin-bottom: var(--gallery-gap);
 	max-height: calc(var(--index) * 35);
 	border-radius: calc(var(--index) * .9);
 }
 .leftContent {
+	margin: 0;
 	margin-top: calc(var(--gallery-gap) * 1.75);
 }
 .rightContent .item {
@@ -73,13 +61,11 @@ body {
 }
 
 .text {
-	color: var(--text);
 	position: relative;
 }
 .texth2 {
 	font-size: calc(var(--index) * 1.5);
 	line-height: 2.4rem;
-	color: var(--header);
 	margin-bottom: 1.5rem;
 }
 .textp {
