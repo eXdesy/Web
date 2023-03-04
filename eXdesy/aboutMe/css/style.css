@@ -3,17 +3,26 @@ body {
 	background-size: 50px;
     background-position: center;
 	overflow-x: hidden;
+	line-height: 1.55;
 }
 
 .content, .hero, .title, .gallery > * {
 	will-change: transform;
 }
-.container {
+.logan {
 	padding: 0 7vw;
 }
-
+.container {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	will-change: transform;
+	transition: var(--transition);
+	padding: 0 7vw;
+}
 .hero {
-	width: calc(var(--index) * 36);
+	max-width: calc(var(--index) * 36);
 	position: absolute;
 	left: 37vw;
 	top: 22vh;
@@ -50,10 +59,10 @@ body {
 	padding: calc(var(--index) * 8) 0;
 }
 .item {
-	max-width: calc(var(--index) * 21);
+	max-width: calc(var(--index) * 22);
 	margin-bottom: var(--gallery-gap);
-	max-height: 180vh;
-	border-radius: 8px;
+	max-height: calc(var(--index) * 35);
+	border-radius: calc(var(--index) * .9);
 }
 .leftContent {
 	margin-top: calc(var(--gallery-gap) * 1.75);
@@ -68,11 +77,12 @@ body {
 	position: relative;
 }
 .texth2 {
-	font-size: 2rem;
+	font-size: calc(var(--index) * 1.5);
 	line-height: 2.4rem;
 	color: var(--header);
 	margin-bottom: 1.5rem;
 }
 .textp {
+	font-size: calc(var(--index) * .9);
 	line-height: 1.75;
 }
