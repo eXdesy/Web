@@ -43,7 +43,8 @@ body {
 }
 .gallery {
 	display: flex;
-	padding: calc(var(--index) * 8) 0;
+	padding: calc(var(--index) * 8) 0
+	flex-wrap: wrap;
 }
 .item {
 	max-width: calc(var(--index) * 20);
