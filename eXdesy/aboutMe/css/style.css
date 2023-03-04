@@ -2,6 +2,7 @@ body {
     background-position: center;
 	overflow-x: hidden;
 	line-height: 1.55;
+	font-family: raleway;
 }
 
 .content, .hero, .title, .gallery > * {
