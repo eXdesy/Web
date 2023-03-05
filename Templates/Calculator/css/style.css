@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(45deg, #0073ff,#ffacac);
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 18vw);
+    grid-template-rows: minmax(210px, auto) repeat(5, 16vw);
+    gap: 10px;
+    padding: 10vh;
+
+}
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 15px;
+    color: #434343;
+}
+.special-button {
+    color: #e7e7e0;
+    background-color: #434343;
+}
+.doubled-grid {
+    grid-column: span 2;
+}
+.output {
+    grid-column: 1 / -1;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    object-fit: none;
+    border-radius: 15px;
+}
+.output .first-operand {
+    font-size: 1.5rem;
+}
+.output .second-operand {
+    font-size: 2.5rem;
+}
