@@ -1,0 +1,81 @@
+/* ------------------------------  DEFOULT SETTINGS  ------------------------------ */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	color: var(--color);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: raleway;
+}
+a {
+	text-decoration: none;
+}
+ul, ol, li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+/* ------------------------------  FONTS  ------------------------------ */
+@font-face {
+	font-family: outfit;
+	src: url(../fonts/outfit-regular.woff2);
+}
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
+/* ------------------------------  VARIABLES  ------------------------------ */
+:root {
+	--index: calc(1vw + 1vh);
+	--color: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* -----  FOOTER IS ALWAYS BOTTOM...X  ----- */
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	margin: 0px auto;
+	/* -----  CONTENT BORDER  ----- */
+	max-width: 90%;
+}
+main {
+	/* -----  X...AFTER MAIN  ----- */
+	flex: 1 1 auto;
+}
+/* ------------------------------  HEADER...  ------------------------------ */
+header {
+	width: 100%;
+	padding: 10vw 0 0 0;
+}
+.title {
+	text-align: center;
+	font-size: calc(var(--index) * 4);
+	letter-spacing: 0.3vh;
+	text-transform: uppercase;
+}
+/* ------------------------------  FOOTER...  ------------------------------ */
+footer {
+	width: 100%;
+}
+.copyright {
+	padding: 5vh;
+	text-align: center;
+}
+.copyright a {
+	font-family: outfit;
+	opacity: .9;
+	font-size: calc(var(--index) * 1.1);
+}
