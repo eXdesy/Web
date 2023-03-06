@@ -1,15 +1,12 @@
 body {
+    width: 100%;
     background: linear-gradient(75deg, #af0273, #784ba0, #000ba4);
     animation: gradient 5s ease infinite;
     background-size: 200% 200%;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-}
+    font-family: outfit;
+}   
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -21,201 +18,187 @@ body {
         background-position: 0 50%;
     }
 }
-
-main {
-    width: 100%;
-    height: auto;
+.wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+.container {
+    height: 100vh;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 60vh;
+    }
+}
+/* ------------------------------  1 PAGE  ------------------------------ */
+.firstPage {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+    width: 90%;
     margin: auto;
 }
-.banner img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.text {
-    position: absolute;
-    top: 0;
-    margin: 22%;
-}
-.text-typing {
-    font-size: 250%;
-    color: #5d00ff;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
-
-.container1 {
+.firstPage-element {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    flex: 1 1 auto;
+    margin: auto;
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
+}
+.firstPage-element img {
+    width: 60%;
 }
 .logo {
-    margin-top: 20%;
-    margin-left: 10%;
+    text-align: right;
+    justify-items: center;
+    margin: 10px;
 }
-.logo img {
-    width: 60%;
-    height: auto;
+.text {
+    width: 100%;
+    text-align: left;
+    justify-items: center;
+    margin: auto;
 }
-.mobile {
-    margin-top: 5%;
-    margin-left: 30%;
+#typed {
+    font-family: raleway;
+    color: #5c1cc4;
+    font-weight: 600;
+    font-size: calc(var(--index) * 2);
 }
-.mobile img {
-    width: 60%;
-    height: auto;
+/* ------------------------------  2 PAGE  ------------------------------ */
+.secondPage {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
 }
-
-.container2 {
+.secondPage-element {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    margin-top: 55%;
+    flex: 1 1 auto;
+    margin: auto;
 }
-.mano img {
-    width: 89%;
-    height: auto;
-}
-.text2 {
+.element-text {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 75%;
-    margin-top: 3%;
-    margin-right: 10%;
-}
-.text2 h1 {
-    width: 100%;
-    font-size: 250%;
-    color: #5d00ff;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
-.text2 p {
-    margin-top: 15%;
-    font-size: 150%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-}
-
-.container3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    text-align: center;
-    margin-top: 104%;
-}
-.container3 h1 {
-    font-size: 250%;
-    color: #ffffff;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
-.diagrama {
-    width: 100%;
-    height: auto;
-}
-.diagrama img {
-    margin-top: 1%;
     width: 80%;
-    height: auto;
+    font-size: calc(var(--index) * 1);
+    justify-content: space-around;
+    justify-items: top;
+    height: 100%;
 }
-
-.container5 {
+.element-text h1 {
+    font-family: raleway;
+    color: #5c1cc4;
+    font-weight: 600;
+    font-size: calc(var(--index) * 2);
+}
+.secondPage-element img {
+    width: 80%;
+}
+/* ------------------------------  3 PAGE  ------------------------------ */
+.thristPage {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    margin-top: 200%;
     text-align: center;
-}
-.container5 h1 {
-    position: absolute;
-    top: 5%;
-    margin-left: 38%;
-    font-size: 250%;
-    color: #ffffff;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
-.laptop {
+    justify-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: auto;
 }
-.laptop img {
-    width: 75%;
-    height: auto;
+.thristPage h1 {
+    font-family: raleway;
+    font-weight: 600;
+    font-size: calc(var(--index) * 2);
 }
-
-.container6 {
+.thristPage-element img {
+    width: 80%;
+}
+/* ------------------------------  4 PAGE  ------------------------------ */
+.fourthPage {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    margin-top: 245%;
-}
-.container6 h1 {
-    margin-top: 5%;
     text-align: center;
-    font-size: 250%;
-    color: #5d00ff;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
-.content {
+    justify-items: center;
+    justify-content: space-around;
     width: 100%;
+}
+/* ------------------------------  5 PAGE  ------------------------------ */
+.fivePage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.fivePage h1 {
+    font-family: raleway;
+    color: #5c1cc4;
+    font-weight: 600;
+    font-size: calc(var(--index) * 2);
+}
+.fivePage-element img {
+    width: 70%;
+}
+/* ------------------------------  6 PAGE  ------------------------------ */
+.sixPage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.sixPage h1 {
+    font-family: raleway;
+    color: #5c1cc4;
+    font-weight: 600;
+    font-size: calc(var(--index) * 2);
+}
+.sixPage-content {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: calc(var(--index) * 1);
 }
-.fisico {
-    margin-top: 2.5%;
-    margin-left: 10% ;
-    width: 50%;
-    height: auto;
-}
-.fisico img {
-    width: 18%;
-    height: auto;
-}
-.textos {
-    margin-right: 20%;
-    display: flex;
-    flex-direction: column;
+.content-element {
     text-align: left;
 }
-.textos p {
-    font-size: 150%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #5d00ff;
+.content-element p{
+    color: #2d2d2d;
 }
-
-.container7 {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    margin-top: 295%;
-    text-align: center;
-}
-.ipad {
-    width: 100%;
-    height: auto;
-}
-.ipad img {
+.content-element img{
     width: 60%;
-    height: auto;
+}
+/* ------------------------------  7 PAGE  ------------------------------ */
+.sevenPage {
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+.sevenPage-element img {
+    width: 60%;
+}
+/* ------------------------------  8 PAGE  ------------------------------ */
+.eightPage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
