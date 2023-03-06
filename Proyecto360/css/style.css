@@ -35,7 +35,7 @@ body {
 }
 @media screen and (max-width: 1000px) {
     .container {
-        height: 60vh;
+        height: 40vh;
     }
 }
 /* ------------------------------  1 PAGE  ------------------------------ */
@@ -99,6 +99,11 @@ body {
     justify-items: top;
     height: 100%;
 }
+@media screen and (max-width: 1000px) {
+    .element-text {
+        height: 105%;
+    }
+}
 .element-text h1 {
     font-family: raleway;
     color: #5c1cc4;
@@ -121,6 +126,11 @@ body {
     font-family: raleway;
     font-weight: 600;
     font-size: calc(var(--index) * 2);
+}
+@media screen and (max-width: 1000px) {
+    .thristPage h1{
+        padding-top: 20%;
+    }
 }
 .thristPage-element img {
     width: 80%;
@@ -149,6 +159,11 @@ body {
     font-weight: 600;
     font-size: calc(var(--index) * 2);
 }
+@media screen and (max-width: 1000px) {
+    .fivePage h1{
+        padding-top: 20%;
+    }
+}
 .fivePage-element img {
     width: 70%;
 }
@@ -166,6 +181,11 @@ body {
     color: #5c1cc4;
     font-weight: 600;
     font-size: calc(var(--index) * 2);
+}
+@media screen and (max-width: 1000px) {
+    .sixPage h1{
+        padding-top: 20%;
+    }
 }
 .sixPage-content {
     display: flex;
@@ -189,6 +209,11 @@ body {
     text-align: center;
     justify-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+    .sevenPage {
+        margin-top: 20%;
+    }
 }
 .sevenPage-element img {
     width: 60%;
