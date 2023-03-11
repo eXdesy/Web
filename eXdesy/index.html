@@ -13,13 +13,13 @@
 	<meta http-equiv="refresh" content="300; URL=index.html">
 
 	<title>eXdesy</title>
-	<link rel="shortcut icon" href="img/logo,ico">
-
+	<link rel="shortcut icon" href="img/logo.ico">
+	<!-- ------------------------------  LIBRARY  ------------------------------ -->
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" defer></script>
+  <!-- ------------------------------  STYLES  ------------------------------ -->
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="css/index.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="js/main.js" defer></script>
@@ -43,24 +43,42 @@
 							<span id="typed"></span>
 						</div>
 					</div>
-					<div class="layer base" style="background-image: url(img/layer-base.png);"></div>
-					<div class="layer middle" style="background-image: url(img/layer-middle.png);"></div>
-					<div class="layer front" style="background-image: url(img/layer-front.png);">
+					<div id="theme" class="layer base" style="background-image: url(img/layer-base.png);"></div>
+					<div id="theme" class="layer middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div id="theme" class="layer front" style="background-image: url(img/layer-front.png);">
 						<nav>
 							<div class="link">
 								<a href="index.html">HOME</a></li>
 								<a href="aboutMe/index.html">ABOUT ME</a></li>
-								<a href="#">PORTFOLIO</a></li>
+								<a href="portfolio/index.html">PORTFOLIO</a></li>
 							</div>
 						</nav>
 					</div>
 				</div>
 			</header>
 			<main>
-				<div class="main__content" style="background-image: url(img/dungeon.jpg);">
+				<div class="main__content">
 					<div class="text">
 						<h2 class="texth2">Hi, i'm eXdesy 👽</h2>
 						<p class="textp">It's still deserted here, but interesting things are coming soon. Patience is everything!</p>
+					</div>
+					<div class="contacts">
+						<h2 class="text-h2">Contacto</h2>
+						<form action="mailto:exdesy.design@gmail.com" method="get" class="mailto">
+							<fieldset class="form">
+								<div class="input-group">
+									<label class="label">Email address</label>
+									<input autocomplete="off" name="Email" id="email" class="input" type="email" placeholder="yourmail@gmail.com" required/>
+									<label class="label">Your full name</label>
+									<input type="text" id="text" class="input" placeholder="Firts & Last name" required/>
+									<label class="label">Your Message</label>
+									<input type="text" id="subject" class="input message" name="subject" placeholder="Hi! im eXdesy!" required />
+									<div class="boton">
+										<button id="sendBttn" class="btn" type="submit" value="Send" >SEND</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
 					</div>
 				</div>
 			</main>
