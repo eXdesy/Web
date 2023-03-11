@@ -19,7 +19,6 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 	let itemsL = gsap.utils.toArray('.leftContent .item')
-	
 	itemsL.forEach(item => {
 		gsap.fromTo(item, { opacity: 0, x: -50 }, {
 			opacity: 1, x: 0,
@@ -46,3 +45,14 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 }
+
+let fondoCambiado = false;
+let cambioFondo = document.querySelector('#tema');
+cambioFondo.addEventListener('click', () => {
+  if (!fondoCambiado) {
+    document.body.style.backgroundImage = "url('../img/bgWhite.png')";
+  } else {
+    document.body.style.backgroundImage;
+  }
+  fondoCambiado = !fondoCambiado;
+});
