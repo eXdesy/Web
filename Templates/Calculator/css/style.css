@@ -6,6 +6,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+@media screen and (min-width: 900px) {
+    body {
+        height: 100vh;
+    }
+}
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -18,8 +23,12 @@ body {
     }
 }
 .calc-box {
-    width: 100%;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: calc(var(--index) * 5) auto;
 }
 .calculator {
     display: grid;
