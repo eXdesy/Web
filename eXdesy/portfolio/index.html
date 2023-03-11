@@ -18,6 +18,7 @@
 	<script src="../libs/gsap/gsap.min.js" defer></script>
 	<script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="../libs/jquery-3.2.1.js" defer></script>
   <!-- ------------------------------  STYLES  ------------------------------ -->
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="../css/index.css" rel="stylesheet" type="text/css"/>
@@ -45,15 +46,15 @@
 			<main>
 				<div class="container">
 					<div id="buttons">
-						<button class="filter" data-filter="all">All</button>
-						<button class="filter" data-filter="Ux">Ux & Ui</button>
-						<button class="filter" data-filter="Web">Web</button>
-						<button class="filter" data-filter="Java">Java</button>
-						<button class="filter" data-filter="Adobe">Adobe</button>
-						<button class="filter" data-filter="Python">Python</button>
+						<button class="filter" category="all">All</button>
+						<button class="filter" category="Ux">Ux & Ui</button>
+						<button class="filter" category="Web">Web</button>
+						<button class="filter" category="Java">Java</button>
+						<button class="filter" category="Adobe">Adobe</button>
+						<button class="filter" category="Python">Python</button>
 					</div>
 					<div id="cards">
-						<div class="card Ux">
+						<div class="card" category="Ux">
 							<div class="card-container carta">
 								<div class="border">
 									<h2>Ui & Ux</h2>
@@ -65,7 +66,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="card Web">
+						<div class="card" category="Web">
 							<div class="card-container carta1">
 								<div class="border">
 									<h2>Web</h2>
@@ -77,7 +78,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="card Java">
+						<div class="card" category="Java">
 							<div class="card-container carta2">
 								<div class="border">
 									<h2>Java</h2>
@@ -88,10 +89,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div id="cards">
-						<div class="card Adobe">
+						</div> 
+						<div class="card" category="Adobe">
 							<div class="card-container carta3">
 								<div class="border">
 									<h2>Adobe</h2>
@@ -103,7 +102,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="card Python">
+						<div class="card" category="Python">
 							<div class="card-container carta4">
 								<div class="border">
 									<h2>Python</h2>
