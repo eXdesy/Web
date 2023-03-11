@@ -1,0 +1,46 @@
+body {
+	background-color: #2d2d2d;
+	font-family: outfit;
+}
+.gridbox {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 200px 200px;
+	gap: 15px;
+}
+.gridbox-card {
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner {
+	grid-row: span 2;
+}
+.card-content {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-items: center;
+	justify-content: space-between;
+	font-size: 0.9em;
+	padding: 15px;
+	height: 100%;
+}
+.card {
+	text-align: center;
+}
+.list {
+	line-height: 2;
+}
+.button {
+	background-color: #e2c60c;
+	width: 100%;
+	padding: 10px 20px;
+	display: block;
+	border-radius: 15px;
+	transition: all 0.5s ease-in-out;
+	text-transform: uppercase;
+	color: #2d2d2d;
+	font-weight: 900;
+}
