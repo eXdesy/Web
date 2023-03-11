@@ -14,16 +14,16 @@
 
 	<title>About Me</title>
 	<link rel="shortcut icon" href="../img/logo.ico">
-	
+  <!-- ------------------------------  LIBRARY  ------------------------------ -->	
 	<script src="../libs/gsap/gsap.min.js" defer></script>
 	<script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
-
+  <!-- ------------------------------  STYLES  ------------------------------ -->
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="../css/index.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="js/main.js" defer></script>
 </head>
-<body style="background-image: url(img/bg.jpg);">
+<body>
 	<div class="wrapper">
 		<div class="content">
 			<header>
@@ -31,18 +31,25 @@
 					<div class="link">
 						<a href="../index.html">HOME</a></li>
 						<a href="index.html">ABOUT ME</a></li>
-						<a href="#">PORTFOLIO</a></li>
+						<a href="../portfolio/index.html">PORTFOLIO</a></li>
+					</div>
+					<div id="tema">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
 					</div>
 				</nav>
 				<img data-speed=".6" class="hero" src="img/hero.png" alt="Hero">
+			</header>
+			<main>
 				<div  data-speed=".75" class="container">
 					<div class="title">
 						<h1 class="title1">eXdesy</h1>
 						<h2 class="title2">Future from the past</h2>
 					</div>
 				</div>
-			</header>
-			<main>
+
 				<div class="gallery">
 					<div data-speed=".9" class="leftContent">
 						<img class="item" src="img/work/1.jpg" alt="Alt">

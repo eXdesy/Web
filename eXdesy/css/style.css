@@ -60,7 +60,6 @@ footer {
 .front {
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
-
 .header {
 	margin-bottom: 20vh;
 	z-index: 1;
@@ -84,10 +83,14 @@ footer {
 
 .main__content {
 	--content-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
-	min-height: 100vh;
+	min-height: auto;
+	background-image: url(../img/dungeon.jpg);
+	height: calc(var(--index) * 50);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -114,4 +117,96 @@ footer {
 	transform: var(--content-transform);
 	transition: var(--transition);
 	will-change: transform;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	width: calc(var(--index) * 30);
+	height: auto;
+	padding: calc(var(--index) * 2);
+	background-color: #00150489;
+	border-radius: 15px;
+}
+.contacts:hover {
+	box-shadow: 0px 0px 30px 1px #03351a55;
+}
+.text-h2 {
+	text-transform: uppercase;
+	font-size: calc(var(--index) * 1.8);
+	letter-spacing: calc(var(--index) / 7.5);
+	transition: var(--transition);
+	will-change: transform;
+}
+
+.input {
+  width: calc(var(--index) * 20);
+  height: 8%;
+  background-color: #05060fa2;
+  border-radius: 15px;
+	padding: 3%;
+  border: 2px;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+.label {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	text-align: center; 
+	max-width: calc(var(--index) * 30);
+	font-size: calc(var(--index) * 1);
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+	padding-top: 15px;
+}
+.message {
+  height: 100px;
+}
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+.input-group:hover, .input:focus {
+  color: #ffffffc2;
+}
+
+.btn {
+	margin: 5%;
+	padding: 2% 2.5%;
+	border: unset;
+	border-radius: 12px;
+	color: #212121;
+	z-index: 1;
+	background: #e8e8e8a4;
+	position: relative;
+	font-weight: 1000;
+	font-size: 17px;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	transition: all 250ms;
+	overflow: hidden;
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, #0b381389 0%, #00510f89 100%);
+	transition: .5s ease;	z-index: -1;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	transition: all 250ms;
+}
+.btn:hover {
+	color: #e8e8e8;
+}
+.btn:hover::before {
+	width: 100%;
 }
