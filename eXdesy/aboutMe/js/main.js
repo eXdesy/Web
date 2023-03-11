@@ -45,7 +45,6 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 }
-
 let fondoCambiado = false;
 let cambioFondo = document.querySelector('#tema');
 cambioFondo.addEventListener('click', () => {
