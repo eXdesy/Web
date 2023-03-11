@@ -22,7 +22,8 @@ body {
 	justify-content: center;
 	justify-items: center;
 	gap: 20px;
-	margin: 5%;
+	margin: 3%;
+	flex-wrap: wrap;
 }
 .card {
 	width: calc(var(--index) * 15);
